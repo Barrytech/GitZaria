@@ -67,30 +67,30 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.cBonion:
                 if(checked){
-                    pizza.setTopping_price(2);
+                    pizza.setOnion_price(2);
                 }else{
-                    pizza.setTopping_price(0);
+                    pizza.setOnion_price(0);
                 }
                 break;
             case R.id.cBpep:
                 if(checked){
-                    pizza.setTopping_price(2);
+                    pizza.setPepper_price(2);
                 }else{
-                    pizza.setTopping_price(0);
+                    pizza.setPepper_price(0);
                 }
                 break;
             case R.id.cBmush:
                 if(checked){
-                    pizza.setTopping_price(2);
+                    pizza.setMushroom_price(2);
                 }else{
-                    pizza.setTopping_price(0);
+                    pizza.setMushroom_price(0);
                 }
                 break;
             case R.id.cBpin:
                 if(checked){
-                    pizza.setTopping_price(2);
+                    pizza.setPineapple_price(2);
                 }else{
-                    pizza.setTopping_price(0);
+                    pizza.setPineapple_price(0);
                 }
                 break;
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private double bigTotal(){
-        TotalPrice = pizza.getPizza_size_pice() + pizza.getTopping_price();
+        TotalPrice = pizza.getPizza_size_pice() + pizza.getTopping_price() + pizza.getOnion__price() + pizza.getPepper__price() + pizza.getMushroom_price() + pizza.getPineapple__price();
 
         return TotalPrice;
     }
