@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     shopping pizza;
-    TextView total = findViewById(R.id.total);
+    TextView total = findViewById(R.id.totalID);
 
 
     double TotalPrice;

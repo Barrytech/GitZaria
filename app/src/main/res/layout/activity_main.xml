@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
 
     <TextView
@@ -27,25 +28,27 @@
         android:layout_height="94dp"
         app:srcCompat="@drawable/images"
         tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_editor_absoluteY="61dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="96dp"
         android:layout_height="97dp"
         app:srcCompat="@drawable/images"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="61dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:text="Size"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="180dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -54,14 +57,16 @@
         android:text="Toppings:  ($2 each)"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="180dp" />
 
     <RadioGroup
         android:layout_width="170dp"
         android:layout_height="146dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="251dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="214dp">
 
         <RadioButton
             android:id="@+id/rdB1"
@@ -88,21 +93,21 @@
 
     <CheckBox
         android:id="@+id/cBmeat"
-        android:layout_width="140dp"
-        android:layout_height="47dp"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
         android:onClick="choseTopping"
         android:text="Meatball          $2"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="251dp" />
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="213dp" />
 
     <CheckBox
         android:id="@+id/cBonion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="139dp"
+        android:layout_height="45dp"
         android:onClick="choseTopping"
         android:text="Onions             $2"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="299dp" />
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="260dp" />
 
     <CheckBox
         android:id="@+id/cBpep"
@@ -110,8 +115,8 @@
         android:layout_height="wrap_content"
         android:onClick="choseTopping"
         android:text="Peppers           $2"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="308dp" />
 
     <CheckBox
         android:id="@+id/cBmush"
@@ -119,8 +124,8 @@
         android:layout_height="wrap_content"
         android:onClick="choseTopping"
         android:text="Mushrooms    $2"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="394dp" />
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="359dp" />
 
     <CheckBox
         android:id="@+id/cBpin"
@@ -128,8 +133,8 @@
         android:layout_height="wrap_content"
         android:onClick="choseTopping"
         android:text="Pineapple        $2"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="407dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -138,8 +143,8 @@
         android:text="Donate $1 "
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="382dp" />
 
     <Switch
         android:id="@+id/switch1"
@@ -147,7 +152,7 @@
         android:layout_height="wrap_content"
         android:text="Yes"
         tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteY="384dp" />
 
     <Button
         android:id="@+id/button"
@@ -155,44 +160,93 @@
         android:layout_height="wrap_content"
         android:text="Order now"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="676dp" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="548dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="535dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="   Veggie"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="464dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="535dp" />
+        android:text="Everything"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="464dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="535dp" />
+        android:text="  Chicago"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="464dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/totalID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:text="Price Total: "
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="617dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="529dp" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.Constraints
+        android:id="@+id/constraints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="191dp"
+        android:layout_marginRight="191dp"
+        android:layout_marginBottom="592dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
