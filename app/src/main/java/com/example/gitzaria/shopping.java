@@ -4,7 +4,7 @@ public class shopping {
 
 
      double pizza_size_pice;
-     double meat_price = 0;
+     double topping_price = 0;
      double cheese_price = 0;
      double veggie_price = 0;
 
@@ -19,12 +19,12 @@ public class shopping {
         this.pizza_size_pice = pizza_size_pice;
     }
 
-    public double getMeat_price() {
-        return meat_price;
+    public double getTopping_price() {
+        return topping_price;
     }
 
-    public void setMeat_price(double meat_price) {
-        this.meat_price = meat_price;
+    public void setTopping_price(double topping_price) {
+        this.topping_price = topping_price;
     }
 
     public double getCheese_price() {

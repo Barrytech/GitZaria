@@ -87,41 +87,46 @@
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cBmeat"
         android:layout_width="140dp"
         android:layout_height="47dp"
+        android:onClick="choseTopping"
         android:text="Meatball          $2"
-         tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="251dp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cBonion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="choseTopping"
         android:text="Onions             $2"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="299dp" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cBpep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="choseTopping"
         android:text="Peppers           $2"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="347dp" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/cBmush"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="choseTopping"
         android:text="Mushrooms    $2"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="394dp" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/cBpin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="choseTopping"
         android:text="Pineapple        $2"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="442dp" />
